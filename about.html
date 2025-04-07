@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AI Interactive History Tutor</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --cream: #f8f4e9;
+            --light-brown: #d7ccc8;
+            --medium-brown: #a1887f;
+            --dark-brown: #5d4037;
+            --accent-brown: #8d6e63;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+        
+        body {
+            background-color: var(--white);
+            color: var(--dark-brown);
+            line-height: 1.7;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+        
+        /* Header */
+        .about-header {
+            background-color: var(--dark-brown);
+            color: var(--cream);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .about-header h1 {
+            font-size: 3.2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .about-header p.subtitle {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+            font-style: italic;
+        }
+        
+        /* Mission Section */
+        .mission {
+            padding: 80px 0;
+            background-color: var(--cream);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--dark-brown);
+            font-size: 2.3rem;
+            font-weight: 400;
+        }
+        
+        .mission-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .mission-content p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        /* Team Section */
+        .team {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--cream);
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid var(--medium-brown);
+        }
+        
+        .team-member h3 {
+            color: var(--dark-brown);
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+        }
+        
+        .team-member p.position {
+            color: var(--accent-brown);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        
+        /* Footer */
+        .about-footer {
+            background-color: var(--dark-brown);
+            color: var(--cream);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .about-footer p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .footer-links li {
+            margin: 0 15px;
+        }
+        
+        .footer-links a {
+            color: var(--cream);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--light-brown);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .about-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-header p.subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="about-header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p class="subtitle">"The past is never dead. It's not even past." — William Faulkner</p>
+        </div>
+    </header>
+    
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <div class="mission-content">
+                <p>
+                    At History Explorer, we believe that understanding history is essential for navigating the present and shaping the future. Our mission is to revolutionize history education through artificial intelligence, making historical learning engaging, personalized, and accessible to all.
+                </p>
+                
+                <p>
+                    Founded in 2025 by 3 engineering students, we combine cutting-edge AI with rigorous academic research to create an immersive learning experience. Our platform adapts to each learner's needs, providing tailored content that brings historical events, figures, and cultures to life.
+                </p>
+                
+                <p>
+                    We're more than just an educational tool—we're building a community of curious minds passionate about uncovering the stories that shaped our world. Whether you're a student, educator, or lifelong learner, we're here to make your historical journey unforgettable.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://imgs.search.brave.com/ljPoCS_zixMtniFEMH0S0B2oVrzNAOcbctUJmak4Ff4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEwLzQ2LzQ2LzI5/LzM2MF9GXzEwNDY0/NjI5NTlfYnJrQnBP/MWIxRkR4NlhWVmlR/SHZlSWZRNFdTUzc3/bnkuanBn" alt="Aryan Choudhary">
+                    <h3>Pulkit Guleria</h3>
+                    <p class="position">Chief Historian</p>
+                    <p>PhD in World History from Oxford, specializing in interactive learning methodologies.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://imgs.search.brave.com/ljPoCS_zixMtniFEMH0S0B2oVrzNAOcbctUJmak4Ff4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEwLzQ2LzQ2LzI5/LzM2MF9GXzEwNDY0/NjI5NTlfYnJrQnBP/MWIxRkR4NlhWVmlR/SHZlSWZRNFdTUzc3/bnkuanBn" alt="James Wilson">
+                    <h3>Kumari Aanchal</h3>
+                    <p class="position">AI Architect</p>
+                    <p>Machine learning expert focused on adaptive educational systems.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://imgs.search.brave.com/ljPoCS_zixMtniFEMH0S0B2oVrzNAOcbctUJmak4Ff4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEwLzQ2LzQ2LzI5/LzM2MF9GXzEwNDY0/NjI5NTlfYnJrQnBP/MWIxRkR4NlhWVmlR/SHZlSWZRNFdTUzc3/bnkuanBn" alt="Aisha Johnson">
+                    <h3>Aryan Choudhary</h3>
+                    <p class="position">Educational Director</p>
+                    <p>Former history professor with 15 years of teaching experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="about-footer">
+        <div class="container">
+            <p>Interactive AI History Tutor</p>
+            <p>Bridging past and present through innovative education</p>
+            
+            <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            
+            <p>&copy; 2025 Interactive AI History Tutor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

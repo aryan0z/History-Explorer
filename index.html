@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Explorer | Interactive AI Tutor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gemini-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="logo">
+            <i class="fas fa-landmark"></i>
+            <h1>History Explorer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Timelines_of_world_history">Timelines</a></li>
+                <li><a href="https://www.jagranjosh.com/general-knowledge/top-kings-and-queens-who-defined-indian-history-1736947234-1">Biographies</a></li>
+                <li><a href="https://historyguild.org/quiz/">Quizzes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Journey Through Time with AI</h2>
+                <p>Discover history's greatest stories, events, and figures through interactive storytelling powered by artificial intelligence.</p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="history-search" placeholder="Ask about any historical event or person...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="search-suggestions">
+                        <span>Try: </span>
+                        <a href="#">Julius Caesar</a>
+                        <a href="#">Industrial Revolution</a>
+                        <a href="#">Ming Dynasty</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="image1.png" alt="History illustration" class="floating">
+            </div>
+        </section>
+
+        <section class="facts-carousel">
+            <h3>Did You Know? <i class="fas fa-lightbulb"></i></h3>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <p>The Great Pyramid of Giza was the tallest man-made structure in the world for over 3,800 years.</p>
+                </div>
+                <div class="carousel-slide">
+                    <p>Cleopatra lived closer in time to the Moon landing than to the construction of the Great Pyramid.</p>
+                </div>
+                <div class="carousel-slide">
+                    <p>The shortest war in history was between Britain and Zanzibar in 1896 - it lasted only 38 minutes.</p>
+                </div>
+                <div class="carousel-slide">
+                    <p>At its peak, the Roman Empire covered 2.5 million square miles and ruled over 70 million people.</p>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots"></div>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="features">
+            <h3>Explore History Like Never Before</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon pulse">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h4>Immersive Stories</h4>
+                    <p>Experience history as interactive narratives where you can ask questions and explore alternative scenarios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pulse">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4>Historical Figures</h4>
+                    <p>Have conversations with AI-powered simulations of historical personalities from different eras.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pulse">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h4>Interactive Maps</h4>
+                    <p>Watch empires rise and fall through animated historical maps with detailed commentary.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Time Periods</h4>
+                <ul>
+                    <li><a href="#">Ancient</a></li>
+                    <li><a href="#">Medieval</a></li>
+                    <li><a href="#">Early Modern</a></li>
+                    <li><a href="#">Modern</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Regions</h4>
+                <ul>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Americas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Team Members</h4>
+                <div class="student-details">
+                    <div class="student">
+                        <p>Aryan Choudhary</p>
+                        <p>Reg: 12304677</p>
+                    </div>
+                    <div class="student">
+                        <p>Kumari Aanchal</p>
+                        <p>Reg: 20230002</p>
+                    </div>
+                    <div class="student">
+                        <p>Pulkit Guleria</p>
+                        <p>Reg: 12305815</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 History Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gemini-integration.js"></script>
+</body>
+</html>
