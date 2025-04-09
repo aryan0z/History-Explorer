@@ -423,20 +423,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const searchContainer = document.querySelector('.search-container');
             if (searchContainer) {
                 searchContainer.appendChild(resultsContainer);
-            } else {
-                console.error('Search container not found');
-                return;
             }
             
             try {
-                // Get factual overview, story, alternative scenario, and quiz questions
-                const [overview, story, alternative, quiz] = await Promise.all([
+                // Get factual overview, story, and alternative scenario (removed quiz)
+                const [overview, story, alternative] = await Promise.all([
                     getFactualOverview(query),
                     getHistoricalStory(query, 'first-person'),
-                    getAlternativeScenario(query),
-                    getQuizQuestions(query)
+                    getAlternativeScenario(query)
                 ]);
-
+    
                 resultsContainer.innerHTML = `
                     <div class="result-content">
                         <div class="factual-overview">
@@ -468,7 +464,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                             </div>
                         </div>
-
+    
                         <div class="alternative-scenario">
                             <h3>Alternative History</h3>
                             <div class="scenario-content">
@@ -483,13 +479,6 @@ document.addEventListener('DOMContentLoaded', function() {
                                 </div>
                             </div>
                         </div>
-
-                        ${quiz ? `
-                        <div class="quiz-section">
-                            <h3>Test Your Knowledge</h3>
-                            ${createInteractiveQuiz(quiz).outerHTML}
-                        </div>
-                        ` : ''}
                         
                         <div class="related-topics">
                             <h4>Want to explore more?</h4>
@@ -502,15 +491,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 resultsContainer.innerHTML = `
                     <div class="error-message">
                         <p>Sorry, we encountered an error while searching. Please try again later.</p>
-                        <p>Error details: ${error.message}</p>
                     </div>
                 `;
             }
-        } else {
-            alert('Please enter a search query');
         }
     }
-    
     if (searchBtn && searchInput) {
         searchBtn.addEventListener('click', performSearch);
         searchInput.addEventListener('keypress', function(e) {
